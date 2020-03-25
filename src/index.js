@@ -1,1 +1,5 @@
-console.log('测试一下');
+import Badge from '../packages/Badge';
+
+export {
+  Badge,
+}
