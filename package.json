@@ -1,6 +1,6 @@
 {
-  "name": "root",
-  "private": true,
+  "name": "easychat-ui",
+  "version": "0.0.1",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
@@ -14,7 +14,7 @@
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
-  "main": "dist/easychat-ui.common.js",
+  "main": "lib/easychat-ui.common.js",
   "scripts": {
     "build": "webpack --config ./build/webpack.common.js"
   },

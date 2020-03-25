@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
@@ -8,17 +8,17 @@ module.exports = {
     path: path.resolve(process.cwd(), './lib'),
     publicPath: '/dist/',
     filename: 'easychat-ui.common.js',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'commonjs2',
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json']
+    extensions: ['.js', '.vue', '.json'],
   },
   stats: {
-    children: false
+    children: false,
   },
   // 模块不压缩，后续项目build再压缩
   optimization: {
-    minimize: false
+    minimize: false,
   },
   module: {
     rules: [
@@ -28,18 +28,18 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env']
-          }
-        }
+            presets: ['@babel/preset-env'],
+          },
+        },
       },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
           compilerOptions: {
-            preserveWhitespace: false
-          }
-        }
+            preserveWhitespace: false,
+          },
+        },
       },
       {
         test: /\.s[ac]ss$/i,
@@ -49,24 +49,27 @@ module.exports = {
           // Translates CSS into CommonJS
           'css-loader',
           // Compiles Sass to CSS
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              prependData: '@import "./src/styles/easychat-ui.scss";',
+            },
+          },
         ],
       },
       {
         test: /\.css$/,
-        loaders: ['style-loader', 'css-loader']
+        loaders: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
         loader: 'url-loader',
         query: {
           limit: 10000,
-          name: path.posix.join('static', '[name].[hash:7].[ext]')
-        }
-      }
-    ]
+          name: path.posix.join('static', '[name].[hash:7].[ext]'),
+        },
+      },
+    ],
   },
-  plugins: [
-    new VueLoaderPlugin()
-  ]
-};
+  plugins: [new VueLoaderPlugin()],
+}
