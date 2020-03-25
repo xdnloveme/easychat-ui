@@ -1,3 +1,3 @@
-import Badge from './lib/Badge'
+import Badge from './src/Badge'
 
 export default Badge

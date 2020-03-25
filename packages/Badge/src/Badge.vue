@@ -1,9 +1,11 @@
 <template>
   <div class="badge-wrapper">
     <slot></slot>
-    <sup v-if="count" :class="['badge-count', count > 10 ? 'badge-multiple-count' : '']">{{
-      format(count)
-    }}</sup>
+    <sup
+      v-if="count"
+      :class="['badge-count', count > 10 ? 'badge-multiple-count' : '']"
+      >{{ format(count) }}</sup
+    >
   </div>
 </template>
 
@@ -17,17 +19,17 @@ export default {
     },
   },
   methods: {
-    format (count) {
+    format(count) {
       if (count > 99) {
-        return '99+';
+        return '99+'
       } else if (count < 0) {
-        return 0;
+        return 0
       } else {
-        return count;
+        return count
       }
     },
   },
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
