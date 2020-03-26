@@ -7,5 +7,22 @@ import EMask from '../packages/EMask'
 import ImageWall from '../packages/ImageWall'
 import Modal from '../packages/Modal'
 import Scroll from '../packages/Scroll'
+import Picker from '../packages/Picker'
+import PickerArea from '../packages/PickerArea'
+import PickerDate from '../packages/PickerDate'
+import ActionSheet from '../packages/ActionSheet'
 
-export { Badge, Button, Divider, Drawer, EMask, ImageWall, Modal, Scroll }
+export {
+  ActionSheet,
+  Badge,
+  Button,
+  Divider,
+  Drawer,
+  EMask,
+  ImageWall,
+  Modal,
+  Scroll,
+  Picker,
+  PickerArea,
+  PickerDate,
+}

@@ -6,5 +6,9 @@
   "EMask": "./packages/EMask/index.js",
   "ImageWall": "./packages/ImageWall/index.js",
   "Modal": "./packages/Modal/index.js",
-  "Scroll": "./packages/Scroll/index.js"
+  "Scroll": "./packages/Scroll/index.js",
+  "Picker": "./packages/Picker/index.js",
+  "PickerArea": "./packages/PickerArea/index.js",
+  "PickerDate": "./packages/PickerDate/index.js",
+  "ActionSheet": "./packages/ActionSheet/index.js"
 }

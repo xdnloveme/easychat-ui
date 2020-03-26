@@ -1,6 +1,6 @@
 {
   "name": "easychat-ui",
-  "version": "0.0.5-beta",
+  "version": "0.0.6-beta",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
@@ -38,5 +38,7 @@
     "vue",
     "components"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "pinyin": "^2.9.0"
+  }
 }

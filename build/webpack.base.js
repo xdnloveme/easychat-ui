@@ -18,6 +18,10 @@ module.exports = {
     },
     modules: ['node_modules'],
   },
+  performance: {
+    // remove warning
+    hints: false,
+  },
   stats: {
     children: false,
   },
