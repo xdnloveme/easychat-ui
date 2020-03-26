@@ -4,5 +4,7 @@
   "Divider": "./packages/Divider/index.js",
   "Drawer": "./packages/Drawer/index.js",
   "EMask": "./packages/EMask/index.js",
-  "ImageWall": "./packages/ImageWall/index.js"
+  "ImageWall": "./packages/ImageWall/index.js",
+  "Modal": "./packages/Modal/index.js",
+  "Scroll": "./packages/Scroll/index.js"
 }

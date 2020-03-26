@@ -58,12 +58,12 @@ export default {
     },
     drawerStyle: {
       type: Object,
-      default() {
+      default () {
         return {}
       },
     },
   },
-  mounted() {
+  mounted () {
     document.body.appendChild(this.$refs.drawer)
 
     this.$once('hook:beforeDestroy', () => {
@@ -71,25 +71,25 @@ export default {
     })
   },
   computed: {
-    animationName() {
+    animationName () {
       return `easychat-animate-${this.direction}`
     },
-    computedSize() {
+    computedSize () {
       return `easychat-drawer-${this.direction}`
     },
   },
   methods: {
-    handleCancel() {
+    handleCancel () {
       this.$emit('input', false)
       this.$emit('cancel')
     },
-    handleConfirm() {
+    handleConfirm () {
       this.$emit('confirm')
     },
-    handleAfterLeave() {
+    handleAfterLeave () {
       this.$emit('hidden', this)
     },
-    handleEnter() {
+    handleEnter () {
       this.$emit('shown', this)
     },
   },
