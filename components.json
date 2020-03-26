@@ -4,5 +4,5 @@
   "Divider": "./packages/Divider/index.js",
   "Drawer": "./packages/Drawer/index.js",
   "EMask": "./packages/EMask/index.js",
-  "Image": "./packages/Image/index.js"
+  "ImageWall": "./packages/ImageWall/index.js"
 }
