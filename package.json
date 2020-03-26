@@ -1,6 +1,6 @@
 {
   "name": "easychat-ui",
-  "version": "0.0.3-beta",
+  "version": "0.0.5-beta",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
@@ -24,6 +24,14 @@
     "build": "webpack --config ./build/webpack.common.js && webpack --config ./build/webpack.component.js",
     "lint": "eslint src/**/*.js packages/**/*.* build/**/* --quiet"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xdnloveme/easychat-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xdnloveme/easychat-ui/issues"
+  },
+  "homepage": "https://github.com/xdnloveme/easychat-ui#readme",
   "keywords": [
     "easychat",
     "easychat-ui",
