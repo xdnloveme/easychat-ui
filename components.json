@@ -1,0 +1,8 @@
+{
+  "Badge": "./packages/Badge/index.js",
+  "Button": "./packages/Button/index.js",
+  "Divider": "./packages/Divider/index.js",
+  "Drawer": "./packages/Drawer/index.js",
+  "EMask": "./packages/EMask/index.js",
+  "Image": "./packages/Image/index.js"
+}
