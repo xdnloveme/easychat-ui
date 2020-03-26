@@ -14,9 +14,8 @@ const desiredFrames = 60;
 const millisecondsPerSeconds = 1000;
 
 export default class Animate {
-  _isAnimating = false;
-
   constructor (name, duration, easing = 'linear') {
+    this._isAnimating = false;
     this.name = name;
     this.duration = duration;
     this.easingMethod = this._getEasingMethod(easing);
@@ -107,7 +106,7 @@ export default class Animate {
     this.step = null;
   }
 
-  _getEasingMethod = easing => {
+  _getEasingMethod (easing) {
     switch (easing) {
       case 'linear':
         return linearMethod;
@@ -118,7 +117,7 @@ export default class Animate {
       default:
         return linearMethod;
     }
-  };
+  }
 
   /**
    * 
