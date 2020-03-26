@@ -24,11 +24,11 @@
 import EMask from '../../EMask'
 
 export default {
-  name: 'Image',
+  name: 'ImageWall',
   components: {
     EMask,
   },
-  data() {
+  data () {
     return {
       visible: false,
       maskImgStyle: {},
@@ -49,7 +49,7 @@ export default {
       default: 'auto',
     },
   },
-  mounted() {
+  mounted () {
     document.body.appendChild(this.$refs.mask)
 
     this.$once('hook:beforeDestroy', () => {
@@ -59,7 +59,7 @@ export default {
     this.init()
   },
   watch: {
-    visible(value) {
+    visible (value) {
       this.initLocation()
       const { SCREEN_HEIGHT } = this.$global
       const {
@@ -82,7 +82,7 @@ export default {
     },
   },
   computed: {
-    imgStyle() {
+    imgStyle () {
       return {
         width: this.width,
         height: this.height,
@@ -90,11 +90,11 @@ export default {
     },
   },
   methods: {
-    init() {
+    init () {
       this.imgSrcDom = this.$refs.imgSource
       this.initLocation()
     },
-    initLocation() {
+    initLocation () {
       const SCREEN_WIDTH = window.innerWidth
       const {
         width,
@@ -110,13 +110,13 @@ export default {
         top: `${top}px`,
       })
     },
-    showMask() {
+    showMask () {
       this.visible = true
     },
-    handleClose() {
+    handleClose () {
       this.visible = false
     },
-    setStyle(style = {}) {
+    setStyle (style = {}) {
       this.maskImgStyle = {
         ...this.maskImgStyle,
         ...style,

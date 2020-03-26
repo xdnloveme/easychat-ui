@@ -4,6 +4,6 @@ import Button from '../packages/Button'
 import Divider from '../packages/Divider'
 import Drawer from '../packages/Drawer'
 import EMask from '../packages/EMask'
-import Image from '../packages/Image'
+import ImageWall from '../packages/ImageWall'
 
-export { Badge, Button, Divider, Drawer, EMask, Image }
+export { Badge, Button, Divider, Drawer, EMask, ImageWall }
