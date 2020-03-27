@@ -11,6 +11,7 @@ import Picker from '../packages/Picker'
 import PickerArea from '../packages/PickerArea'
 import PickerDate from '../packages/PickerDate'
 import ActionSheet from '../packages/ActionSheet'
+import Dialog from '../packages/Dialog'
 
 export {
   ActionSheet,
@@ -18,6 +19,7 @@ export {
   Button,
   Divider,
   Drawer,
+  Dialog,
   EMask,
   ImageWall,
   Modal,
