@@ -9,7 +9,6 @@ module.exports = merge(webpackBaseConfig, {
     publicPath: '/dist/',
     chunkFilename: '[id].js',
     filename: 'easychat-ui.common.js',
-    libraryExport: 'default',
     library: 'EASYCHAT',
     libraryTarget: 'commonjs2',
   },
