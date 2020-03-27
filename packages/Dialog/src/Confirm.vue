@@ -1,8 +1,8 @@
 <template>
   <Modal @handleAfterHidden="handleAfterLeave" v-model="visible">
     <template v-slot:header>
-      <div class="easychat-confirm-hedaer">
-        <img alt="icon-confirm" :src="iconType" /> {{ title }}
+      <div class="easychat-confirm-header">
+        <img class="easychat-confirm-icon" alt="icon-confirm" :src="iconType" /> {{ title }}
       </div>
     </template>
     <template v-slot:body>
@@ -111,6 +111,14 @@ export default {
 <style lang="scss" scoped>
 .easychat-confirm-body {
   margin: 0;
+}
+
+.easychat-confirm-header {
+  .easychat-confirm-icon {
+    height: 24px;
+    width: 24px;
+    vertical-align: bottom;
+  }
 }
 
 .icon-question {

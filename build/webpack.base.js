@@ -18,6 +18,9 @@ module.exports = {
     },
     modules: ['node_modules'],
   },
+  externals: {
+    vue: 'vue',
+  },
   performance: {
     // remove warning
     hints: false,
