@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Toast from './Toast.vue';
 import types from './type';
 import '../style.css';
+import loading from '../assets/loading.svg'
 
 let ToastConstructor = Vue.extend(Toast);
 
@@ -11,7 +12,7 @@ let instance;
 const defaultOptions = {
   showIcon: false,
   message: '默认消息',
-  iconSource: require('../assets/loading.svg'),
+  iconSource: loading,
 };
 
 const _Toast = function (options = defaultOptions) {

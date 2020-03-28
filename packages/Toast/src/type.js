@@ -1,8 +1,12 @@
+import loading from '../assets/loading.svg'
+import success from '../assets/success.svg'
+import error from '../assets/error.svg'
+
 const types = {
   loading: {
     showIcon: true,
     message: '正在加载',
-    iconSource: require('../assets/loading.svg'),
+    iconSource: loading,
     styles: {
       cssstyle: ['loadingRotate'],
     },
@@ -10,12 +14,12 @@ const types = {
   success: {
     showIcon: true,
     message: '成功',
-    iconSource: require('../assets/success.svg'),
+    iconSource: success,
   },
   error: {
     showIcon: true,
     message: '错误',
-    iconSource: require('../assets/error.svg'),
+    iconSource: error,
   },
 };
 
