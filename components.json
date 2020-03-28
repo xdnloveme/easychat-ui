@@ -11,5 +11,6 @@
   "PickerArea": "./packages/PickerArea/index.js",
   "PickerDate": "./packages/PickerDate/index.js",
   "ActionSheet": "./packages/ActionSheet/index.js",
-  "Dialog": "./packages/Dialog/index.js"
+  "Dialog": "./packages/Dialog/index.js",
+  "Toast": "./packages/Toast/index.js"
 }

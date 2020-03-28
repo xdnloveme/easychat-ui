@@ -12,6 +12,7 @@ import PickerArea from '../packages/PickerArea'
 import PickerDate from '../packages/PickerDate'
 import ActionSheet from '../packages/ActionSheet'
 import Dialog from '../packages/Dialog'
+import Toast from '../packages/Toast'
 
 export {
   ActionSheet,
@@ -27,4 +28,5 @@ export {
   Picker,
   PickerArea,
   PickerDate,
+  Toast,
 }
