@@ -19,7 +19,7 @@ export default {
     },
   },
   methods: {
-    format(count) {
+    format (count) {
       if (count > 99) {
         return '99+'
       } else if (count < 0) {
